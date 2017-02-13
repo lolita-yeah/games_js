@@ -83,12 +83,12 @@
 			guessField.focus();
 		}
 		/** reset game
-		** 	重置游戏
-		** 	猜测次数重置为1
-		**	resultParas下的子节点内容清空
-		**	移除resetBtn
-		**	表单、提交按钮恢复使用
-		*
+		** 	guessCount 恢复为1
+		**	清除段落信息
+		**	从我们的代码中删除重置按钮
+		**	启用表单元素，并清空和聚焦文本字段，准备输入新的猜测
+		**	从lastResult段中删除背景颜色
+		**	生成一个新的随机数，这样你不只是猜到相同的数字
 		*/
 		function resetGame(){
 			guessCount = 1;
